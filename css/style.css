@@ -1,6 +1,7 @@
 /* CUSTOM PROPS */
 :root {
   --primary: #EA625C;
+  --primary-dark: #c9514c;
   --text-color: #333;
 }
 
@@ -50,6 +51,31 @@ img {
   margin-right: auto;
   margin-left: auto;
 }
+
+
+/* BUTTON */
+.button {
+  display: inline-block;
+  color: #fff;
+  background-color: var(--primary);
+  padding: 12px 38px;
+  text-decoration: none;
+  font-size: 18px;
+  bottom: 0;
+  line-height: 27px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--primary-dark);
+  opacity: 0.8;
+}
+
+.button:active {
+  opacity: 0.6;
+}
+
 
 
 /* MAIN-CONTENT */
@@ -133,4 +159,51 @@ img {
   padding-bottom: 6px;
   border: 0;
   border-bottom: 1px solid var(--text-color);
+}
+
+
+/* HERO */
+.hero {
+  padding-top: 140px;
+  padding-bottom: 185px;
+  border-bottom: 2px solid #ddd;
+  background-image: url(/img/watches.jpg);
+  background-repeat: no-repeat;
+  background-position: right calc(50% - 550px) bottom;
+  background-size: 587px 565px;
+
+}
+
+.lead-cta {
+  width: 100%;
+  max-width: 490px;
+}
+
+.lead-cta-heading {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 50px;
+  line-height: 1.2;
+  color: #000;
+}
+
+.lead-cta-text {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #777;
+  padding-left: 37px;
+  border-left: 3px solid #888;
+}
+
+/* CSS Retina */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .hero {
+    background-image: url(/img/watches@2x.jpg);
+  }
 }
