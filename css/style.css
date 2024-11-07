@@ -56,6 +56,8 @@ img {
 /* BUTTON */
 .button {
   display: inline-block;
+  min-width: 260px;
+  text-align: center;
   color: #fff;
   background-color: var(--primary);
   padding: 12px 38px;
@@ -203,6 +205,8 @@ img {
   max-width: 490px;
 }
 
+
+
 .lead-cta-heading {
   margin-top: 0;
   margin-bottom: 30px;
@@ -211,12 +215,21 @@ img {
   color: #000;
 }
 
+.lead-cta-white .lead-cta-heading {
+  color: #fff;
+}
+
 .lead-cta-text {
   margin-top: 0;
   margin-bottom: 30px;
   color: #777;
   padding-left: 37px;
   border-left: 3px solid #888;
+}
+
+.lead-cta-white .lead-cta-text {
+  color: #fff;
+  border-color: #fff;
 }
 
 /* FEATURE */
@@ -265,6 +278,39 @@ img {
   box-shadow: 16px 0 0 0 #ddd,
     32px 0 0 0 #ddd;
 }
+
+/* PROMO */
+.promo {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.promo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.promo-img {
+  width: 400px;
+  height: 600px;
+  object-fit: cover;
+}
+
+/* RUNNERS */
+.runners {
+  padding-top: 240px;
+  padding-bottom: 240px;
+  background-image: url(/img/runners.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.runners-lead-cta {
+  margin-left: auto;
+}
+
 
 
 
